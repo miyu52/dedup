@@ -1,0 +1,16 @@
+[project]
+name = "dedup"
+version = "0.1.0"
+description = "Content-based duplicate file finder — moves low-priority copies into a Dedup folder."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+dedup = "dedup:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
