@@ -29,6 +29,10 @@ import sys
 from collections import defaultdict
 from typing import Dict, Iterator, List, Tuple
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 CHUNK_SIZE = 64 * 1024  # 64 KiB
 
 
